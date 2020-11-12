@@ -61,6 +61,22 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Submissions",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SurName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Age = table.Column<int>(type: "int", nullable: false),
+                    SerialNumber = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Submissions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -166,26 +182,53 @@ namespace Persistence.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Submissions",
-                columns: table => new
+            migrationBuilder.InsertData(
+                table: "SerialNumbers",
+                columns: new[] { "Id", "SerialKey", "TimesUsed" },
+                values: new object[,]
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SurName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Age = table.Column<int>(type: "int", nullable: false),
-                    SerialNumberId = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Submissions", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Submissions_SerialNumbers_SerialNumberId",
-                        column: x => x.SerialNumberId,
-                        principalTable: "SerialNumbers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                    { "3b087e43-b121-44ca-90e4-40bc63802ca6", 724503, 0 },
+                    { "14001f17-064a-4ca0-8d3e-acb68e8d08d8", 742236, 0 },
+                    { "c3feced5-9843-43b0-a808-367273e0de49", 725793, 0 },
+                    { "283ec2c1-3d76-4268-83cd-fd3ce9088b49", 769711, 0 },
+                    { "9d7d53f5-03b2-4135-a2eb-26f7c1fdbafd", 775330, 0 },
+                    { "09e78033-c91b-46a7-b5aa-f3bd85698dee", 693408, 0 },
+                    { "6a691ebd-699e-4a07-b79a-0c265f582933", 102311, 0 },
+                    { "10da9b45-7f20-465b-9ae3-397e48c4c4b8", 454703, 0 },
+                    { "3fd02a40-7206-4208-b69d-7be64e2e0a2e", 557433, 0 },
+                    { "7ff3ac81-1520-46e9-99f3-a826650d364d", 190959, 0 },
+                    { "42aa6288-294d-46c3-a870-da28131857d4", 590966, 0 },
+                    { "624786f6-013f-4bbd-a2a5-7a39c61e15a8", 158648, 0 },
+                    { "a65f1759-6a7f-4b57-b176-4d5ef496385e", 160135, 0 },
+                    { "096b4b16-65c3-4d83-858f-dfe781d8c01b", 495562, 0 },
+                    { "8666be3e-01e2-4f0a-bd86-a0e6771b6b0b", 218574, 0 },
+                    { "deb53225-3a15-4eba-8348-030c81f41683", 690491, 0 },
+                    { "501bbde5-be3f-4041-a68c-a1da03c47652", 434104, 0 },
+                    { "389a81e2-e770-4685-a0ec-f18b29004942", 316075, 0 },
+                    { "10340a1d-3f3e-4397-9f1e-04087374dda4", 921356, 0 },
+                    { "9777d31f-5d02-440d-b281-1620f42a0628", 157496, 0 },
+                    { "fbc4c75b-2df1-4492-b92b-6acbeb234547", 170468, 0 },
+                    { "8c47b230-ba54-4fb8-9f9e-7317974d4672", 443369, 0 },
+                    { "f95d3e62-913d-4283-a501-6aab98dffaa6", 382876, 0 },
+                    { "5fbe64d7-a27b-4b20-af54-8a5065410c4f", 844550, 0 },
+                    { "eadea6de-2db5-43d7-8cb5-ac8a2934b816", 950561, 0 },
+                    { "be806f7b-5969-4a5c-8a94-dabd007413e4", 410291, 0 },
+                    { "957a8521-9164-47a0-b984-311482cd79da", 901887, 0 },
+                    { "9818ec31-70f2-4178-86b4-56ddef3fb114", 398621, 0 },
+                    { "ac578fa9-6ee9-49fc-a546-2c632df29ff2", 555961, 0 },
+                    { "c4556e53-75fc-4ce8-932d-67b7ac47ca48", 246496, 0 },
+                    { "b6d67b96-edb8-478d-b025-5bcccb4c0cf2", 241905, 0 },
+                    { "7f653dc4-f9cf-46ac-a514-54e532d68cca", 270268, 0 },
+                    { "cfa7bc89-4254-4d54-938a-83e8a778c3b9", 779891, 0 },
+                    { "51317fa2-25b2-436f-8947-c9ff8ceb3aeb", 246640, 0 },
+                    { "f6d58432-f91f-4fec-b6b1-59efc4ab9dc9", 267469, 0 },
+                    { "ade7e430-94d7-4466-b9cd-731fc5ecc6f6", 453767, 0 },
+                    { "b1eb522b-f670-4c1a-9e19-5aa9cb57d575", 698040, 0 },
+                    { "eb4a84af-ce3a-4eb5-8b25-a40795a9b1ca", 625490, 0 },
+                    { "066088e0-68fa-411e-b562-257d12445896", 582154, 0 },
+                    { "6bde6b4b-e1b2-42a1-8fdf-4bbfaa57a5bf", 459624, 0 },
+                    { "d7b11994-f713-417f-ba72-01ea2279d4fe", 929201, 0 },
+                    { "f352bf7c-d0e5-46f2-86ed-dd86740a4af6", 833345, 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -193,48 +236,48 @@ namespace Persistence.Migrations
                 columns: new[] { "Id", "SerialKey", "TimesUsed" },
                 values: new object[,]
                 {
-                    { "e65cef35-2b18-42a7-b8e1-5edf0411aa28", 518711, 0 },
-                    { "ac210891-bf98-4204-8b56-cc1e7fc191f4", 335972, 0 },
-                    { "613942c7-03a0-45bd-846b-02382365181e", 463059, 0 },
-                    { "89282cdb-ee41-4585-8894-65d4df4a9654", 479814, 0 },
-                    { "9dae5f4d-5ded-4d9c-8952-97062e9e7f5a", 998312, 0 },
-                    { "68cea172-b014-49b9-966a-0a37d4a5ffc3", 741688, 0 },
-                    { "626cc23b-85d4-4896-b9f9-50238e4557b6", 465062, 0 },
-                    { "996ab793-454b-4109-95ce-e620ad1cb83b", 180154, 0 },
-                    { "3e52f525-b858-45bf-9a43-f0c11b9a1e66", 983630, 0 },
-                    { "4187f2e1-d8eb-4e02-a65a-35f4487ae59f", 284318, 0 },
-                    { "d59bcd7a-7f54-4f68-adf4-e38c2876f97b", 121077, 0 },
-                    { "d26b6e99-83d0-4b8d-9064-788d67188814", 364548, 0 },
-                    { "dfa5b6ba-f3a8-47b0-8ded-5659ba5385cf", 194244, 0 },
-                    { "5471f025-a081-43aa-a6ea-9cb326337b2f", 828639, 0 },
-                    { "80bcabcb-313e-4f11-9d30-e5dd0cdadcbf", 926302, 0 },
-                    { "64918d82-7907-4c21-a1ef-883f7eaed366", 217397, 0 },
-                    { "62d6f4bb-59f8-4fc9-ba84-336a8016a8eb", 110197, 0 },
-                    { "f2b57a10-a158-4811-a967-262c57aab5b6", 152471, 0 },
-                    { "36f80212-512f-447e-80ed-1b7b6346b627", 128565, 0 },
-                    { "d7eccc89-c757-4837-b263-e290af082b1f", 792659, 0 },
-                    { "8c5d2215-92ea-4e8d-9ce9-735741a7576e", 850463, 0 },
-                    { "9ab75593-7ee3-431a-a261-a9680e3cafb7", 159151, 0 },
-                    { "40e71aba-7bdc-40a6-9da7-1e79c3e74b11", 966139, 0 },
-                    { "6625322e-89c3-44af-844f-9e45426a353e", 850279, 0 },
-                    { "dec38ab0-5b71-4bc1-9003-c2f307f5e43c", 451501, 0 },
-                    { "192c5526-25fe-45ee-ade0-763daa83f4fb", 580587, 0 },
-                    { "8e8a98fd-1e9c-48a4-89a7-017e08056399", 888480, 0 },
-                    { "867397ae-5b98-482f-8eaf-6b35cc80e577", 208152, 0 },
-                    { "39cdc4c4-4931-4b6e-9f92-b603bd84ef0e", 743491, 0 },
-                    { "49698db3-d31f-4dbe-bba4-0ec6eddd3eac", 249105, 0 },
-                    { "985ca1a3-b9a8-4ca4-9551-088d888d1a54", 311731, 0 },
-                    { "1e85bee5-0bd3-437e-87be-1b2797fea0ff", 213055, 0 },
-                    { "fe58a45f-d436-4326-af6d-828e0d154d8e", 575903, 0 },
-                    { "cc4cd8f2-4f4e-4b4e-bfd7-cbf5e10e3c84", 659400, 0 },
-                    { "87c27e62-427a-4c1f-945d-8b7283497f3c", 599161, 0 },
-                    { "c1955c17-fd10-4990-8a2f-0e7e9f5f811c", 933482, 0 },
-                    { "9cb09f13-072f-445e-952f-8d8431913d5a", 250521, 0 },
-                    { "be1d14f4-f016-4ad1-a8bc-cb5190a0417e", 139579, 0 },
-                    { "659d80e3-514e-4e7c-8811-9291706d021c", 978092, 0 },
-                    { "97da97ef-c5d1-4019-902b-74fe603ac93f", 614473, 0 },
-                    { "88e2639c-4862-439f-aa24-1bd4d103a3d8", 893972, 0 },
-                    { "4ee2b5a0-5711-466f-b1ad-89ff26dcde7a", 251345, 0 }
+                    { "5a24c4de-7fbc-4e32-8b59-2abd3d9bbedd", 235187, 0 },
+                    { "47b06a39-7d41-476a-af43-f92ca79d25b6", 350597, 0 },
+                    { "b52bf386-bfee-43ae-83af-1e6203c47c59", 605913, 0 },
+                    { "e4d4ff88-40c5-46bb-96fc-a2c36351bb9d", 287587, 0 },
+                    { "7e4def2c-887a-411c-874d-0a089462fbd0", 330720, 0 },
+                    { "6e755887-d01e-4371-9621-294976ee8a20", 634472, 0 },
+                    { "e0141255-26d8-43cc-bdea-255d4fc8fdc6", 235828, 0 },
+                    { "e91a98cf-b864-47b0-b9a1-9f26dcbcb64e", 305473, 0 },
+                    { "18999856-e902-445b-b57e-190ae61ac4a5", 857721, 0 },
+                    { "e7698a27-9921-4e02-982b-a17833339335", 803146, 0 },
+                    { "c9ca1b7c-b429-4ea6-8fe2-36e3af715dc4", 991742, 0 },
+                    { "0128f5f8-49b1-4bc9-9e30-d723d1dd43d2", 566660, 0 },
+                    { "37c7ecbf-ec51-434d-929a-854f8aebe797", 924936, 0 },
+                    { "f91f9b76-72f6-4f14-8435-993581d091ab", 102717, 0 },
+                    { "e47a9d27-fbba-4549-b7ff-f426e9666f16", 586554, 0 },
+                    { "4062c9a0-4b09-4965-a49e-7849633ffd5f", 883708, 0 },
+                    { "e0377c56-d74d-4975-9424-e162ef4c3e51", 238047, 0 },
+                    { "a3d105ec-13e7-488b-9fce-6a1f42f82d58", 782235, 0 },
+                    { "84e3208b-dea0-48f4-af2c-7333c944aa15", 513575, 0 },
+                    { "678c5118-8f10-4b04-a745-bb2ec78445d9", 223212, 0 },
+                    { "a8dcfce4-538f-472e-b5ce-1a3ce5696f55", 526293, 0 },
+                    { "1d3d1ec7-c65e-455c-92dd-fbfaae9917ba", 517665, 0 },
+                    { "3e858001-b483-4ae2-881b-86af4e4fa661", 186420, 0 },
+                    { "782a35be-ae75-477b-ab1d-361dd9d601be", 293324, 0 },
+                    { "735018d9-42dc-4578-9b22-c81ea50da274", 751204, 0 },
+                    { "70c782cc-8d57-424e-820d-aa02c556a2af", 129505, 0 },
+                    { "c14fec24-0442-4010-8670-4bec6c4cb4ab", 305147, 0 },
+                    { "fffae6ee-12ba-4442-917f-32bc2bc7648c", 262356, 0 },
+                    { "4a6a4c87-31c7-40c3-a1b9-5691e65fe437", 307196, 0 },
+                    { "53ceaddd-13dc-4b4b-9506-48074ae27b5c", 856872, 0 },
+                    { "66952d51-b8e1-45b7-abd7-f5d71641de6e", 640796, 0 },
+                    { "1106b082-d851-464b-97ed-6937f8ea07d6", 873090, 0 },
+                    { "554f135f-cc97-46a4-aa27-ff7ec6150519", 571863, 0 },
+                    { "ae3f257a-4219-4414-a5ce-50bc84aba4c4", 186572, 0 },
+                    { "e11e842e-3d46-44b6-8634-d204e5eae171", 498754, 0 },
+                    { "15f0748d-06ab-45af-9bcb-2d2174a8c1e9", 835974, 0 },
+                    { "fb60b3cc-8bc0-4a69-aae5-cc749c62d4f1", 965948, 0 },
+                    { "90617c2e-bb91-41d7-bd74-ded790e11f81", 685503, 0 },
+                    { "d21fedf4-58d8-4e91-becc-c06249e79bf9", 410075, 0 },
+                    { "31932592-8ac8-429e-8c52-65d7736a0060", 492855, 0 },
+                    { "60e91dc0-6d72-49d5-bf1c-6255e0bc63a4", 457269, 0 },
+                    { "1272de4f-dd79-405d-88b0-e53563a6512e", 616097, 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -242,71 +285,22 @@ namespace Persistence.Migrations
                 columns: new[] { "Id", "SerialKey", "TimesUsed" },
                 values: new object[,]
                 {
-                    { "0ead175a-4fce-4e53-b72d-e0ae44c26e18", 173836, 0 },
-                    { "098736fb-38f4-46d9-a561-365ee0083363", 244368, 0 },
-                    { "d9cb7892-c0fc-4dbd-b9e9-233a159b0411", 262225, 0 },
-                    { "662fc1b6-cb8e-4f6e-b06e-02c054921028", 144672, 0 },
-                    { "eae58974-1d6b-4695-8cf1-051d1fa38a09", 393170, 0 },
-                    { "81a16fb2-26bb-4387-91dc-38e00f34bc48", 583588, 0 },
-                    { "41fe8f63-6ad2-4894-97ef-39b1e5473f73", 858511, 0 },
-                    { "d3d59bfc-5351-47c6-b95a-998fb2ef3a31", 630446, 0 },
-                    { "89874e9c-7137-47d1-811a-3b8373fc7c3b", 387417, 0 },
-                    { "3c6becb7-4b5e-4670-8696-e4fbfcf4622d", 490146, 0 },
-                    { "125ddb96-d990-466a-8126-187a2e66d400", 956290, 0 },
-                    { "59d9eb7e-8011-4f82-bcb3-d63742b18f41", 289238, 0 },
-                    { "fcf8f43f-05f9-4b23-b02c-cc849cd8dedc", 943885, 0 },
-                    { "ac44a5ca-dda6-4b3e-8de5-cb0b669307f7", 474007, 0 },
-                    { "6c536c63-565b-4e61-914f-80eadd1efcf3", 693512, 0 },
-                    { "25b90053-0f96-457e-ab17-1e5c546e532b", 965916, 0 },
-                    { "59ff70c8-5b1e-4999-81ea-7bcf1d6e581b", 710185, 0 },
-                    { "5d3deb82-ba42-4d55-9cbf-a0b63c1254ec", 369416, 0 },
-                    { "915a391b-1fab-4f3f-9032-fa0659cf1c86", 191207, 0 },
-                    { "1b8341e0-7517-4987-81b9-f3cbed6142d7", 181140, 0 },
-                    { "2fff297f-6cb9-4b01-a22e-0c17f101d4f8", 182362, 0 },
-                    { "3e780bed-3c1a-48d4-b22c-cc46b47bfe77", 112692, 0 },
-                    { "c16d8786-7115-4838-880f-b197d9045268", 494063, 0 },
-                    { "41399652-2c9d-4c04-a364-bda50b1cb350", 788968, 0 },
-                    { "dbc63fd3-5a5d-4b92-b268-b7a6f62a01d1", 633007, 0 },
-                    { "e8bf8ba3-5f8c-4bc2-a7a8-42d31d540894", 653867, 0 },
-                    { "46301537-70dd-463d-b110-a9a911e54c36", 997390, 0 },
-                    { "0c7d359c-6307-49cd-8c06-aa86a4395a3e", 559063, 0 },
-                    { "7b77e49c-114a-4e88-8b58-7176289a928e", 822759, 0 },
-                    { "f2228d88-aa70-41ba-804e-723904e1075d", 558404, 0 },
-                    { "51cd2c5e-cebf-4057-90e2-e1355029d642", 505932, 0 },
-                    { "b194ec46-b0f6-4936-9fec-68131ca82cf9", 812562, 0 },
-                    { "9ae55db3-4112-4877-b7a6-a1c7397801b8", 441665, 0 },
-                    { "a9f2230b-e61f-48bd-a1ec-c2bdacd83ba5", 171088, 0 },
-                    { "82b5dc94-b040-4479-9277-da8afe46cb54", 751389, 0 },
-                    { "116c1c10-55c3-43db-96e9-03e9b4461498", 926718, 0 },
-                    { "6a4ea392-8e39-496d-aaf9-efa449342817", 279440, 0 },
-                    { "f5ef93e9-33fb-4498-a7c4-c0b662e2a2b5", 767889, 0 },
-                    { "45063d64-4aef-4e2d-b0ae-a29be009494e", 212762, 0 },
-                    { "4db76410-c91f-4536-bd76-31a0a5eadb6f", 909558, 0 },
-                    { "64055eb8-d0f5-46f1-aa72-d219f3ae65de", 472701, 0 },
-                    { "d7959937-e0c5-483b-a9e2-8a62b6184521", 837735, 0 }
-                });
-
-            migrationBuilder.InsertData(
-                table: "SerialNumbers",
-                columns: new[] { "Id", "SerialKey", "TimesUsed" },
-                values: new object[,]
-                {
-                    { "34879e96-7195-44a2-af62-84b08e7f30a0", 977745, 0 },
-                    { "f24f5ac0-340f-4945-862b-890c139e0c22", 238034, 0 },
-                    { "f558543a-51f3-4da9-bcad-23172c087417", 928443, 0 },
-                    { "6247a86e-0290-43f4-a162-e927edaf0a1e", 330453, 0 },
-                    { "fb02f3be-6f06-4375-b83a-6f9b9e396b02", 711872, 0 },
-                    { "bbc7c06c-8802-4a58-9603-0fdfef6712ad", 627727, 0 },
-                    { "12c8412f-fe1a-413b-abf5-0454b237894a", 726143, 0 },
-                    { "1ac798ed-3f23-4c35-9025-ad6f17bb31c4", 100985, 0 },
-                    { "51905f69-9c96-4267-86b7-9ffb76b02936", 198731, 0 },
-                    { "24e23d52-dfe7-44cf-9428-bc3206f7b55a", 828373, 0 },
-                    { "f834e3ff-b256-4d8b-b32d-f1148797a0d9", 472985, 0 },
-                    { "3aac48ce-107e-4051-b0c8-833733baafbc", 524419, 0 },
-                    { "2fe3d78b-d518-49bd-b7fc-8ea3b3e5c095", 538763, 0 },
-                    { "867faca0-cd89-4755-b34e-c0c8d6677dd0", 825226, 0 },
-                    { "eed59368-c77f-4d5e-a152-5e579c14a972", 586101, 0 },
-                    { "d643ad6c-c53b-40c0-bb9a-7df452fd73e4", 784258, 0 }
+                    { "d3183187-d51d-49e1-b61e-0f05a2975bc8", 642059, 0 },
+                    { "e8c6cb9b-9bcc-4c72-988f-c77d560cc81b", 360480, 0 },
+                    { "310ee8d4-b2aa-4d6c-807d-6a55e93afaf6", 319115, 0 },
+                    { "c0142edd-46fd-4391-9371-c1a5f1b30d21", 860760, 0 },
+                    { "ccf90fac-708a-49f6-a4fc-33484ccb9c95", 462715, 0 },
+                    { "abd119b5-be72-4a01-aa3f-85bcb79c71ad", 188827, 0 },
+                    { "ba7780e8-03b5-4177-ab9d-a4c96cb8420f", 511264, 0 },
+                    { "7951d0f0-9084-4274-a26a-d02435d08f62", 768508, 0 },
+                    { "9c24fe43-08b7-423c-ae37-65c8431abd7e", 968859, 0 },
+                    { "04c13716-9661-4ff1-bfb1-62dec2ecf6d5", 426706, 0 },
+                    { "727c8c73-fa44-4084-a3f4-095e11d79854", 595452, 0 },
+                    { "5c194c97-4e79-40e0-88d3-178b1d5f6486", 234675, 0 },
+                    { "d8839100-2592-4c1a-9fba-d03fdd940425", 691068, 0 },
+                    { "48fe2145-fa30-4bda-aafc-369fc2d4fdba", 633942, 0 },
+                    { "f1d88c76-4b60-4260-8d73-823255b2f7b8", 213996, 0 },
+                    { "40eb73c2-5613-454a-9bb7-4c241a9b1581", 228070, 0 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -347,11 +341,6 @@ namespace Persistence.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Submissions_SerialNumberId",
-                table: "Submissions",
-                column: "SerialNumberId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -372,6 +361,9 @@ namespace Persistence.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "SerialNumbers");
+
+            migrationBuilder.DropTable(
                 name: "Submissions");
 
             migrationBuilder.DropTable(
@@ -379,9 +371,6 @@ namespace Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "SerialNumbers");
         }
     }
 }

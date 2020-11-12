@@ -17,6 +17,6 @@ namespace Application.ViewModels
         [Required]
         public int Age { get; set; }
         [Required]
-        public int ProductSerialNumber { get; set; }
+        public int SerialNumber { get; set; }
     }
 }

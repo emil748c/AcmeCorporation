@@ -37,602 +37,602 @@ namespace Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e65cef35-2b18-42a7-b8e1-5edf0411aa28",
-                            SerialKey = 518711,
+                            Id = "3b087e43-b121-44ca-90e4-40bc63802ca6",
+                            SerialKey = 724503,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f2228d88-aa70-41ba-804e-723904e1075d",
-                            SerialKey = 558404,
+                            Id = "53ceaddd-13dc-4b4b-9506-48074ae27b5c",
+                            SerialKey = 856872,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "7b77e49c-114a-4e88-8b58-7176289a928e",
-                            SerialKey = 822759,
+                            Id = "4a6a4c87-31c7-40c3-a1b9-5691e65fe437",
+                            SerialKey = 307196,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "0c7d359c-6307-49cd-8c06-aa86a4395a3e",
-                            SerialKey = 559063,
+                            Id = "fffae6ee-12ba-4442-917f-32bc2bc7648c",
+                            SerialKey = 262356,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "46301537-70dd-463d-b110-a9a911e54c36",
-                            SerialKey = 997390,
+                            Id = "c14fec24-0442-4010-8670-4bec6c4cb4ab",
+                            SerialKey = 305147,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "e8bf8ba3-5f8c-4bc2-a7a8-42d31d540894",
-                            SerialKey = 653867,
+                            Id = "70c782cc-8d57-424e-820d-aa02c556a2af",
+                            SerialKey = 129505,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "dbc63fd3-5a5d-4b92-b268-b7a6f62a01d1",
-                            SerialKey = 633007,
+                            Id = "735018d9-42dc-4578-9b22-c81ea50da274",
+                            SerialKey = 751204,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "41399652-2c9d-4c04-a364-bda50b1cb350",
-                            SerialKey = 788968,
+                            Id = "782a35be-ae75-477b-ab1d-361dd9d601be",
+                            SerialKey = 293324,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "c16d8786-7115-4838-880f-b197d9045268",
-                            SerialKey = 494063,
+                            Id = "3e858001-b483-4ae2-881b-86af4e4fa661",
+                            SerialKey = 186420,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "3e780bed-3c1a-48d4-b22c-cc46b47bfe77",
-                            SerialKey = 112692,
+                            Id = "1d3d1ec7-c65e-455c-92dd-fbfaae9917ba",
+                            SerialKey = 517665,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "2fff297f-6cb9-4b01-a22e-0c17f101d4f8",
-                            SerialKey = 182362,
+                            Id = "a8dcfce4-538f-472e-b5ce-1a3ce5696f55",
+                            SerialKey = 526293,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "1b8341e0-7517-4987-81b9-f3cbed6142d7",
-                            SerialKey = 181140,
+                            Id = "678c5118-8f10-4b04-a745-bb2ec78445d9",
+                            SerialKey = 223212,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "915a391b-1fab-4f3f-9032-fa0659cf1c86",
-                            SerialKey = 191207,
+                            Id = "84e3208b-dea0-48f4-af2c-7333c944aa15",
+                            SerialKey = 513575,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "5d3deb82-ba42-4d55-9cbf-a0b63c1254ec",
-                            SerialKey = 369416,
+                            Id = "a3d105ec-13e7-488b-9fce-6a1f42f82d58",
+                            SerialKey = 782235,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "59ff70c8-5b1e-4999-81ea-7bcf1d6e581b",
-                            SerialKey = 710185,
+                            Id = "e0377c56-d74d-4975-9424-e162ef4c3e51",
+                            SerialKey = 238047,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "25b90053-0f96-457e-ab17-1e5c546e532b",
-                            SerialKey = 965916,
+                            Id = "4062c9a0-4b09-4965-a49e-7849633ffd5f",
+                            SerialKey = 883708,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "6c536c63-565b-4e61-914f-80eadd1efcf3",
-                            SerialKey = 693512,
+                            Id = "e47a9d27-fbba-4549-b7ff-f426e9666f16",
+                            SerialKey = 586554,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "ac44a5ca-dda6-4b3e-8de5-cb0b669307f7",
-                            SerialKey = 474007,
+                            Id = "f91f9b76-72f6-4f14-8435-993581d091ab",
+                            SerialKey = 102717,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "fcf8f43f-05f9-4b23-b02c-cc849cd8dedc",
-                            SerialKey = 943885,
+                            Id = "37c7ecbf-ec51-434d-929a-854f8aebe797",
+                            SerialKey = 924936,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "59d9eb7e-8011-4f82-bcb3-d63742b18f41",
-                            SerialKey = 289238,
+                            Id = "0128f5f8-49b1-4bc9-9e30-d723d1dd43d2",
+                            SerialKey = 566660,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "125ddb96-d990-466a-8126-187a2e66d400",
-                            SerialKey = 956290,
+                            Id = "c9ca1b7c-b429-4ea6-8fe2-36e3af715dc4",
+                            SerialKey = 991742,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "3c6becb7-4b5e-4670-8696-e4fbfcf4622d",
-                            SerialKey = 490146,
+                            Id = "e7698a27-9921-4e02-982b-a17833339335",
+                            SerialKey = 803146,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "51cd2c5e-cebf-4057-90e2-e1355029d642",
-                            SerialKey = 505932,
+                            Id = "66952d51-b8e1-45b7-abd7-f5d71641de6e",
+                            SerialKey = 640796,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "b194ec46-b0f6-4936-9fec-68131ca82cf9",
-                            SerialKey = 812562,
+                            Id = "1106b082-d851-464b-97ed-6937f8ea07d6",
+                            SerialKey = 873090,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "9ae55db3-4112-4877-b7a6-a1c7397801b8",
-                            SerialKey = 441665,
+                            Id = "554f135f-cc97-46a4-aa27-ff7ec6150519",
+                            SerialKey = 571863,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "a9f2230b-e61f-48bd-a1ec-c2bdacd83ba5",
-                            SerialKey = 171088,
+                            Id = "ae3f257a-4219-4414-a5ce-50bc84aba4c4",
+                            SerialKey = 186572,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "867faca0-cd89-4755-b34e-c0c8d6677dd0",
-                            SerialKey = 825226,
+                            Id = "48fe2145-fa30-4bda-aafc-369fc2d4fdba",
+                            SerialKey = 633942,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "2fe3d78b-d518-49bd-b7fc-8ea3b3e5c095",
-                            SerialKey = 538763,
+                            Id = "d8839100-2592-4c1a-9fba-d03fdd940425",
+                            SerialKey = 691068,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "3aac48ce-107e-4051-b0c8-833733baafbc",
-                            SerialKey = 524419,
+                            Id = "5c194c97-4e79-40e0-88d3-178b1d5f6486",
+                            SerialKey = 234675,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f834e3ff-b256-4d8b-b32d-f1148797a0d9",
-                            SerialKey = 472985,
+                            Id = "727c8c73-fa44-4084-a3f4-095e11d79854",
+                            SerialKey = 595452,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "24e23d52-dfe7-44cf-9428-bc3206f7b55a",
-                            SerialKey = 828373,
+                            Id = "04c13716-9661-4ff1-bfb1-62dec2ecf6d5",
+                            SerialKey = 426706,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "51905f69-9c96-4267-86b7-9ffb76b02936",
-                            SerialKey = 198731,
+                            Id = "9c24fe43-08b7-423c-ae37-65c8431abd7e",
+                            SerialKey = 968859,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "1ac798ed-3f23-4c35-9025-ad6f17bb31c4",
-                            SerialKey = 100985,
+                            Id = "7951d0f0-9084-4274-a26a-d02435d08f62",
+                            SerialKey = 768508,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "12c8412f-fe1a-413b-abf5-0454b237894a",
-                            SerialKey = 726143,
+                            Id = "ba7780e8-03b5-4177-ab9d-a4c96cb8420f",
+                            SerialKey = 511264,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "bbc7c06c-8802-4a58-9603-0fdfef6712ad",
-                            SerialKey = 627727,
+                            Id = "abd119b5-be72-4a01-aa3f-85bcb79c71ad",
+                            SerialKey = 188827,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "fb02f3be-6f06-4375-b83a-6f9b9e396b02",
-                            SerialKey = 711872,
+                            Id = "ccf90fac-708a-49f6-a4fc-33484ccb9c95",
+                            SerialKey = 462715,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "eed59368-c77f-4d5e-a152-5e579c14a972",
-                            SerialKey = 586101,
+                            Id = "f1d88c76-4b60-4260-8d73-823255b2f7b8",
+                            SerialKey = 213996,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "6247a86e-0290-43f4-a162-e927edaf0a1e",
-                            SerialKey = 330453,
+                            Id = "c0142edd-46fd-4391-9371-c1a5f1b30d21",
+                            SerialKey = 860760,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f24f5ac0-340f-4945-862b-890c139e0c22",
-                            SerialKey = 238034,
+                            Id = "e8c6cb9b-9bcc-4c72-988f-c77d560cc81b",
+                            SerialKey = 360480,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "34879e96-7195-44a2-af62-84b08e7f30a0",
-                            SerialKey = 977745,
+                            Id = "d3183187-d51d-49e1-b61e-0f05a2975bc8",
+                            SerialKey = 642059,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d7959937-e0c5-483b-a9e2-8a62b6184521",
-                            SerialKey = 837735,
+                            Id = "1272de4f-dd79-405d-88b0-e53563a6512e",
+                            SerialKey = 616097,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "64055eb8-d0f5-46f1-aa72-d219f3ae65de",
-                            SerialKey = 472701,
+                            Id = "60e91dc0-6d72-49d5-bf1c-6255e0bc63a4",
+                            SerialKey = 457269,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "4db76410-c91f-4536-bd76-31a0a5eadb6f",
-                            SerialKey = 909558,
+                            Id = "31932592-8ac8-429e-8c52-65d7736a0060",
+                            SerialKey = 492855,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "45063d64-4aef-4e2d-b0ae-a29be009494e",
-                            SerialKey = 212762,
+                            Id = "d21fedf4-58d8-4e91-becc-c06249e79bf9",
+                            SerialKey = 410075,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f5ef93e9-33fb-4498-a7c4-c0b662e2a2b5",
-                            SerialKey = 767889,
+                            Id = "90617c2e-bb91-41d7-bd74-ded790e11f81",
+                            SerialKey = 685503,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "6a4ea392-8e39-496d-aaf9-efa449342817",
-                            SerialKey = 279440,
+                            Id = "fb60b3cc-8bc0-4a69-aae5-cc749c62d4f1",
+                            SerialKey = 965948,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "116c1c10-55c3-43db-96e9-03e9b4461498",
-                            SerialKey = 926718,
+                            Id = "15f0748d-06ab-45af-9bcb-2d2174a8c1e9",
+                            SerialKey = 835974,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "82b5dc94-b040-4479-9277-da8afe46cb54",
-                            SerialKey = 751389,
+                            Id = "e11e842e-3d46-44b6-8634-d204e5eae171",
+                            SerialKey = 498754,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "89874e9c-7137-47d1-811a-3b8373fc7c3b",
-                            SerialKey = 387417,
+                            Id = "18999856-e902-445b-b57e-190ae61ac4a5",
+                            SerialKey = 857721,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d3d59bfc-5351-47c6-b95a-998fb2ef3a31",
-                            SerialKey = 630446,
+                            Id = "e91a98cf-b864-47b0-b9a1-9f26dcbcb64e",
+                            SerialKey = 305473,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "41fe8f63-6ad2-4894-97ef-39b1e5473f73",
-                            SerialKey = 858511,
+                            Id = "e0141255-26d8-43cc-bdea-255d4fc8fdc6",
+                            SerialKey = 235828,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "6625322e-89c3-44af-844f-9e45426a353e",
-                            SerialKey = 850279,
+                            Id = "5fbe64d7-a27b-4b20-af54-8a5065410c4f",
+                            SerialKey = 844550,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "9ab75593-7ee3-431a-a261-a9680e3cafb7",
-                            SerialKey = 159151,
+                            Id = "8c47b230-ba54-4fb8-9f9e-7317974d4672",
+                            SerialKey = 443369,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "8c5d2215-92ea-4e8d-9ce9-735741a7576e",
-                            SerialKey = 850463,
+                            Id = "fbc4c75b-2df1-4492-b92b-6acbeb234547",
+                            SerialKey = 170468,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d7eccc89-c757-4837-b263-e290af082b1f",
-                            SerialKey = 792659,
+                            Id = "9777d31f-5d02-440d-b281-1620f42a0628",
+                            SerialKey = 157496,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "36f80212-512f-447e-80ed-1b7b6346b627",
-                            SerialKey = 128565,
+                            Id = "10340a1d-3f3e-4397-9f1e-04087374dda4",
+                            SerialKey = 921356,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f2b57a10-a158-4811-a967-262c57aab5b6",
-                            SerialKey = 152471,
+                            Id = "389a81e2-e770-4685-a0ec-f18b29004942",
+                            SerialKey = 316075,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "62d6f4bb-59f8-4fc9-ba84-336a8016a8eb",
-                            SerialKey = 110197,
+                            Id = "501bbde5-be3f-4041-a68c-a1da03c47652",
+                            SerialKey = 434104,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "64918d82-7907-4c21-a1ef-883f7eaed366",
-                            SerialKey = 217397,
+                            Id = "deb53225-3a15-4eba-8348-030c81f41683",
+                            SerialKey = 690491,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "80bcabcb-313e-4f11-9d30-e5dd0cdadcbf",
-                            SerialKey = 926302,
+                            Id = "8666be3e-01e2-4f0a-bd86-a0e6771b6b0b",
+                            SerialKey = 218574,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "5471f025-a081-43aa-a6ea-9cb326337b2f",
-                            SerialKey = 828639,
+                            Id = "096b4b16-65c3-4d83-858f-dfe781d8c01b",
+                            SerialKey = 495562,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "dfa5b6ba-f3a8-47b0-8ded-5659ba5385cf",
-                            SerialKey = 194244,
+                            Id = "a65f1759-6a7f-4b57-b176-4d5ef496385e",
+                            SerialKey = 160135,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d26b6e99-83d0-4b8d-9064-788d67188814",
-                            SerialKey = 364548,
+                            Id = "624786f6-013f-4bbd-a2a5-7a39c61e15a8",
+                            SerialKey = 158648,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d59bcd7a-7f54-4f68-adf4-e38c2876f97b",
-                            SerialKey = 121077,
+                            Id = "42aa6288-294d-46c3-a870-da28131857d4",
+                            SerialKey = 590966,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "4187f2e1-d8eb-4e02-a65a-35f4487ae59f",
-                            SerialKey = 284318,
+                            Id = "7ff3ac81-1520-46e9-99f3-a826650d364d",
+                            SerialKey = 190959,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "3e52f525-b858-45bf-9a43-f0c11b9a1e66",
-                            SerialKey = 983630,
+                            Id = "3fd02a40-7206-4208-b69d-7be64e2e0a2e",
+                            SerialKey = 557433,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "996ab793-454b-4109-95ce-e620ad1cb83b",
-                            SerialKey = 180154,
+                            Id = "10da9b45-7f20-465b-9ae3-397e48c4c4b8",
+                            SerialKey = 454703,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "626cc23b-85d4-4896-b9f9-50238e4557b6",
-                            SerialKey = 465062,
+                            Id = "6a691ebd-699e-4a07-b79a-0c265f582933",
+                            SerialKey = 102311,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "68cea172-b014-49b9-966a-0a37d4a5ffc3",
-                            SerialKey = 741688,
+                            Id = "09e78033-c91b-46a7-b5aa-f3bd85698dee",
+                            SerialKey = 693408,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "9dae5f4d-5ded-4d9c-8952-97062e9e7f5a",
-                            SerialKey = 998312,
+                            Id = "9d7d53f5-03b2-4135-a2eb-26f7c1fdbafd",
+                            SerialKey = 775330,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "89282cdb-ee41-4585-8894-65d4df4a9654",
-                            SerialKey = 479814,
+                            Id = "283ec2c1-3d76-4268-83cd-fd3ce9088b49",
+                            SerialKey = 769711,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "613942c7-03a0-45bd-846b-02382365181e",
-                            SerialKey = 463059,
+                            Id = "c3feced5-9843-43b0-a808-367273e0de49",
+                            SerialKey = 725793,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "ac210891-bf98-4204-8b56-cc1e7fc191f4",
-                            SerialKey = 335972,
+                            Id = "14001f17-064a-4ca0-8d3e-acb68e8d08d8",
+                            SerialKey = 742236,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "40e71aba-7bdc-40a6-9da7-1e79c3e74b11",
-                            SerialKey = 966139,
+                            Id = "f95d3e62-913d-4283-a501-6aab98dffaa6",
+                            SerialKey = 382876,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "dec38ab0-5b71-4bc1-9003-c2f307f5e43c",
-                            SerialKey = 451501,
+                            Id = "eadea6de-2db5-43d7-8cb5-ac8a2934b816",
+                            SerialKey = 950561,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "81a16fb2-26bb-4387-91dc-38e00f34bc48",
-                            SerialKey = 583588,
+                            Id = "6e755887-d01e-4371-9621-294976ee8a20",
+                            SerialKey = 634472,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "192c5526-25fe-45ee-ade0-763daa83f4fb",
-                            SerialKey = 580587,
+                            Id = "be806f7b-5969-4a5c-8a94-dabd007413e4",
+                            SerialKey = 410291,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "eae58974-1d6b-4695-8cf1-051d1fa38a09",
-                            SerialKey = 393170,
+                            Id = "7e4def2c-887a-411c-874d-0a089462fbd0",
+                            SerialKey = 330720,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "662fc1b6-cb8e-4f6e-b06e-02c054921028",
-                            SerialKey = 144672,
+                            Id = "e4d4ff88-40c5-46bb-96fc-a2c36351bb9d",
+                            SerialKey = 287587,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d9cb7892-c0fc-4dbd-b9e9-233a159b0411",
-                            SerialKey = 262225,
+                            Id = "b52bf386-bfee-43ae-83af-1e6203c47c59",
+                            SerialKey = 605913,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "098736fb-38f4-46d9-a561-365ee0083363",
-                            SerialKey = 244368,
+                            Id = "47b06a39-7d41-476a-af43-f92ca79d25b6",
+                            SerialKey = 350597,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "0ead175a-4fce-4e53-b72d-e0ae44c26e18",
-                            SerialKey = 173836,
+                            Id = "5a24c4de-7fbc-4e32-8b59-2abd3d9bbedd",
+                            SerialKey = 235187,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "4ee2b5a0-5711-466f-b1ad-89ff26dcde7a",
-                            SerialKey = 251345,
+                            Id = "f352bf7c-d0e5-46f2-86ed-dd86740a4af6",
+                            SerialKey = 833345,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "88e2639c-4862-439f-aa24-1bd4d103a3d8",
-                            SerialKey = 893972,
+                            Id = "d7b11994-f713-417f-ba72-01ea2279d4fe",
+                            SerialKey = 929201,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "97da97ef-c5d1-4019-902b-74fe603ac93f",
-                            SerialKey = 614473,
+                            Id = "6bde6b4b-e1b2-42a1-8fdf-4bbfaa57a5bf",
+                            SerialKey = 459624,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "659d80e3-514e-4e7c-8811-9291706d021c",
-                            SerialKey = 978092,
+                            Id = "066088e0-68fa-411e-b562-257d12445896",
+                            SerialKey = 582154,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "be1d14f4-f016-4ad1-a8bc-cb5190a0417e",
-                            SerialKey = 139579,
+                            Id = "eb4a84af-ce3a-4eb5-8b25-a40795a9b1ca",
+                            SerialKey = 625490,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "9cb09f13-072f-445e-952f-8d8431913d5a",
-                            SerialKey = 250521,
+                            Id = "b1eb522b-f670-4c1a-9e19-5aa9cb57d575",
+                            SerialKey = 698040,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "c1955c17-fd10-4990-8a2f-0e7e9f5f811c",
-                            SerialKey = 933482,
+                            Id = "ade7e430-94d7-4466-b9cd-731fc5ecc6f6",
+                            SerialKey = 453767,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "87c27e62-427a-4c1f-945d-8b7283497f3c",
-                            SerialKey = 599161,
+                            Id = "f6d58432-f91f-4fec-b6b1-59efc4ab9dc9",
+                            SerialKey = 267469,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "cc4cd8f2-4f4e-4b4e-bfd7-cbf5e10e3c84",
-                            SerialKey = 659400,
+                            Id = "51317fa2-25b2-436f-8947-c9ff8ceb3aeb",
+                            SerialKey = 246640,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "fe58a45f-d436-4326-af6d-828e0d154d8e",
-                            SerialKey = 575903,
+                            Id = "cfa7bc89-4254-4d54-938a-83e8a778c3b9",
+                            SerialKey = 779891,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "1e85bee5-0bd3-437e-87be-1b2797fea0ff",
-                            SerialKey = 213055,
+                            Id = "7f653dc4-f9cf-46ac-a514-54e532d68cca",
+                            SerialKey = 270268,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "985ca1a3-b9a8-4ca4-9551-088d888d1a54",
-                            SerialKey = 311731,
+                            Id = "b6d67b96-edb8-478d-b025-5bcccb4c0cf2",
+                            SerialKey = 241905,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "49698db3-d31f-4dbe-bba4-0ec6eddd3eac",
-                            SerialKey = 249105,
+                            Id = "c4556e53-75fc-4ce8-932d-67b7ac47ca48",
+                            SerialKey = 246496,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "39cdc4c4-4931-4b6e-9f92-b603bd84ef0e",
-                            SerialKey = 743491,
+                            Id = "ac578fa9-6ee9-49fc-a546-2c632df29ff2",
+                            SerialKey = 555961,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "867397ae-5b98-482f-8eaf-6b35cc80e577",
-                            SerialKey = 208152,
+                            Id = "9818ec31-70f2-4178-86b4-56ddef3fb114",
+                            SerialKey = 398621,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "8e8a98fd-1e9c-48a4-89a7-017e08056399",
-                            SerialKey = 888480,
+                            Id = "957a8521-9164-47a0-b984-311482cd79da",
+                            SerialKey = 901887,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "f558543a-51f3-4da9-bcad-23172c087417",
-                            SerialKey = 928443,
+                            Id = "310ee8d4-b2aa-4d6c-807d-6a55e93afaf6",
+                            SerialKey = 319115,
                             TimesUsed = 0
                         },
                         new
                         {
-                            Id = "d643ad6c-c53b-40c0-bb9a-7df452fd73e4",
-                            SerialKey = 784258,
+                            Id = "40eb73c2-5613-454a-9bb7-4c241a9b1581",
+                            SerialKey = 228070,
                             TimesUsed = 0
                         });
                 });
@@ -651,15 +651,13 @@ namespace Persistence.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SerialNumberId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("SerialNumber")
+                        .HasColumnType("int");
 
                     b.Property<string>("SurName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("SerialNumberId");
 
                     b.ToTable("Submissions");
                 });
@@ -871,15 +869,6 @@ namespace Persistence.Migrations
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
-                });
-
-            modelBuilder.Entity("Domain.Submission", b =>
-                {
-                    b.HasOne("Domain.SerialNumber", "SerialNumber")
-                        .WithMany()
-                        .HasForeignKey("SerialNumberId");
-
-                    b.Navigation("SerialNumber");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

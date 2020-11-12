@@ -21,12 +21,25 @@ namespace Persistence.Repositories
         {
             context.Submissions.Add(submission);
             await context.SaveChangesAsync();
+
+
         }
 
         public async Task<List<Submission>> GetAllSubmissions()
         {
             var submissions = await context.Submissions.ToListAsync();
             return submissions;
+        }
+
+        public void UpdateSerialNumber(SerialNumber serialNumber)
+        {
+            context.SerialNumbers.Update(serialNumber);
+        }
+
+        public async Task<SerialNumber> ValidSubmissionSerialNumber(int serialKey)
+        {
+            var productSerialNumber = await context.SerialNumbers.FirstOrDefaultAsync(x => x.SerialKey == serialKey);
+            return productSerialNumber;
         }
     }
 }

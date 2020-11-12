@@ -9,5 +9,7 @@ namespace Domain.Interfaces
     {
         Task<List<Submission>> GetAllSubmissions();
         Task CreateSubmission(Submission submission);
+        Task<SerialNumber> ValidSubmissionSerialNumber(int serialKey);
+        void UpdateSerialNumber(SerialNumber serialNumber);
     }
 }

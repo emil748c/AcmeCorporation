@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace AcmeCorporation.Controllers
 {
     [Route("api/[controller]/[action]")]
-    [ApiController]
+    //[ApiController]
     public class SubmissionController : Controller
     {
         private readonly ISubmissionService service;
@@ -35,10 +35,15 @@ namespace AcmeCorporation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateASubmission(CreateSubmissionViewModel viewModel)
+        public async Task<IActionResult> CreateSubmission(CreateSubmissionViewModel viewModel)
         {
+            //if (!this.ModelState.IsValid)
+            //{
+            //    return BadRequest();
+            //}
+
             await service.CreateSubmission(viewModel);
-            return Ok();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
