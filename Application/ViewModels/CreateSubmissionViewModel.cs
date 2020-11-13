@@ -7,16 +7,19 @@ namespace Application.ViewModels
 {
     public class CreateSubmissionViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "First name is required")]
+        [RegularExpression(@"^[a-zA-Z]*$", ErrorMessage = "First name must be alphabetic letters a-z")]
         public string FirstName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Surname is required")]
+        [RegularExpression(@"^[a-zA-Z]*$", ErrorMessage = "Surname must be alphabetic letters a-z")]
         public string SurName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Email is required")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Age is required")]
         public int Age { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Serial number is required")]
+        [RegularExpression(@"^\d{6}$", ErrorMessage ="Serial number must be 6 digits")]
         public int SerialNumber { get; set; }
     }
 }

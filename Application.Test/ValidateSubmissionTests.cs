@@ -57,21 +57,72 @@ namespace Application.Test
         }
 
         [Fact]
-        public async Task SubmissionShouldBeInvalidWithAgeUnder18()
+        public async Task Submission_IsInvalid_WithAgeUnder18()
         {
             //arrange
             var createSubmissionViewModel = new CreateSubmissionViewModel()
             {
                 FirstName = "Rasmus",
-                SurName = "Petersen",
+                SurName = "Hansen",
                 Email = "rasmushansen@mail.dk",
-                Age = 16,
+                Age = 15,
                 SerialNumber = 234567
             };
-            
+            var serialNumber = new SerialNumber()
+            {
+                Id = Guid.NewGuid().ToString(),
+                SerialKey = 234567,
+                TimesUsed = 0
+            };
+            var submission = new Submission()
+            {
+                FirstName = "Rasmus",
+                SurName = "Hansen",
+                Email = "rasmushansen@mail.dk",
+                Age = 15,
+                SerialNumber = 234567
+            };
+            mockRepo.Setup(x => x.ValidSubmissionSerialNumber(createSubmissionViewModel.SerialNumber))
+                .ReturnsAsync(serialNumber);
+            mockMapper.Setup(x => x.Map<Submission>(createSubmissionViewModel)).Returns(submission);
             //act
             await sut.CreateSubmission(createSubmissionViewModel);
             //assert
+            Assert.Equal(0, serialNumber.TimesUsed);
+        }
+        [Fact]
+        public async Task Submission_IsInvalid_WithTwoTimesUsedSerialnumber()
+        {
+            //arrange
+            var createSubmissionViewModel = new CreateSubmissionViewModel()
+            {
+                FirstName = "Rasmus",
+                SurName = "Hansen",
+                Email = "rasmushansen@mail.dk",
+                Age = 20,
+                SerialNumber = 234567
+            };
+            var serialNumber = new SerialNumber()
+            {
+                Id = Guid.NewGuid().ToString(),
+                SerialKey = 234567,
+                TimesUsed = 2
+            };
+            var submission = new Submission()
+            {
+                FirstName = "Rasmus",
+                SurName = "Hansen",
+                Email = "rasmushansen@mail.dk",
+                Age = 20,
+                SerialNumber = 234567
+            };
+            mockRepo.Setup(x => x.ValidSubmissionSerialNumber(createSubmissionViewModel.SerialNumber))
+                .ReturnsAsync(serialNumber);
+            mockMapper.Setup(x => x.Map<Submission>(createSubmissionViewModel)).Returns(submission);
+            //act
+            await sut.CreateSubmission(createSubmissionViewModel);
+            //assert
+            Assert.Equal(2, serialNumber.TimesUsed);
         }
     }
 }

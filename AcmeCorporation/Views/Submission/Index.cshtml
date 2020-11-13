@@ -6,24 +6,28 @@
 
 <h1>Index</h1>
 
-<p>
+@*<p>
     <a asp-action="Create">Create New</a>
-</p>
+</p>*@
 <table class="table">
     <thead>
         <tr>
-            <th></th>
+            <th>First name</th>
+            <th>Surname</th>
+            <th>Email address</th>
+            <th>Age</th>
+            <th>Serial number</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @item.FirstName
-                @item.SurName
-                @item.Email
+            <td>@item.FirstName</td>
+            <td>@item.SurName</td>
+            <td>@item.Email</td>
+            <td>@item.Age</td>
+            <td>@item.SerialNumber</td>
                 
-            </td>
         </tr>
 }
     </tbody>
