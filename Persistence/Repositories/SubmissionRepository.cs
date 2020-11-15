@@ -27,7 +27,7 @@ namespace Persistence.Repositories
 
         public async Task<List<Submission>> GetAllSubmissions()
         {
-            var submissions = await context.Submissions.ToListAsync();
+            var submissions = await context.Submissions.OrderBy(ob => ob.SurName).ToListAsync();
             return submissions;
         }
 

@@ -25,6 +25,7 @@ namespace AcmeCorporation.Controllers
         public async Task<IActionResult> Index()
         {
             var submissions = await service.GetAllSubmissions();
+
             return View(submissions);
         }
 
@@ -37,10 +38,10 @@ namespace AcmeCorporation.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateSubmission(CreateSubmissionViewModel viewModel)
         {
-            //if (!this.ModelState.IsValid)
-            //{
-            //    return BadRequest();
-            //}
+            if (!this.ModelState.IsValid)
+            {
+                return BadRequest();
+            }
 
             await service.CreateSubmission(viewModel);
             return RedirectToAction("Index", "Home");
