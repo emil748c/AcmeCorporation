@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Application.ViewModels.GetListSubmissionsViewModel>
-
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
 @{
     ViewData["Title"] = "Index";
 }
-
 <h1>Index</h1>
 
 @*<p>
-    <a asp-action="Create">Create New</a>
-</p>*@
+        <a asp-action="Create">Create New</a>
+    </p>*@
 <table class="table">
     <thead>
         <tr>
@@ -20,15 +20,17 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
-            <td>@Html.DisplayFor(modelItem => item.SurName)</td>
-            <td>@Html.DisplayFor(modelItem => item.Email)</td>
-            <td>@Html.DisplayFor(modelItem => item.Age)</td>
-            <td>@Html.DisplayFor(modelItem => item.SerialNumber)</td>
-                
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+                <td>@Html.DisplayFor(modelItem => item.SurName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Age)</td>
+                <td>@Html.DisplayFor(modelItem => item.SerialNumber)</td>
+
+            </tr>
+        }
     </tbody>
 </table>
+@Html.PagedListPager((IPagedList)ViewBag.OnePageOfSubmissions, page => Url.Action("Index", new { page }))

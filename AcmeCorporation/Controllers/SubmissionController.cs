@@ -7,6 +7,7 @@ using Application.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using X.PagedList;
 
 namespace AcmeCorporation.Controllers
 {
@@ -22,11 +23,15 @@ namespace AcmeCorporation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
             var submissions = await service.GetAllSubmissions();
 
-            return View(submissions);
+            var pageNumber = page ?? 1;
+            var onePageOfSubmissions = submissions.ToPagedList(pageNumber, 10);
+
+            ViewBag.OnePageOfSubmissions = onePageOfSubmissions;
+            return View(onePageOfSubmissions);
         }
 
         [HttpGet]
