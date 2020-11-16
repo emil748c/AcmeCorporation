@@ -48,7 +48,7 @@ Each serial number can be used twice.
 
 Finding more serial numbers can be easily done in Visual Studio through SQL Server Object Explorer, Microsoft SQL Management Studio or even in the "ApplicationDbContextModelSnapshot" class in the Migrations folder of the Persistence project.
 
-##### Remember! SerialKey is the value input by the user
+##### Remember! SerialKey is the value used as input by the user
 
 ### Additional information
 
