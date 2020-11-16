@@ -37,4 +37,4 @@ Here is a picture example from page 2:
 
 ### Additional information
 As the database is seeded with randomly generated serial numbers you will need to manually find one in the database.
-This can easily be done in Visual Studio through SQL Server Object Explorer or Microsoft SQL Management Studio.
+This can easily be done in Visual Studio through SQL Server Object Explorer, Microsoft SQL Management Studio or even in the "ApplicationDbContextModelSnapshot" file in the Migrations folder of the Persistence project.
