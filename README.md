@@ -24,7 +24,7 @@ A new local database amed AcmeCorporationDB should now be made and ready for use
 The project should be ready to run by now.
 
 ### Additional information
-As the database is seeded with randomly generated serial numbers you will need to manually find one in the database.
+As the database is seeded with randomly generated serial numbers you will need to manually find one in the database before a submission can be created.
 This can easily be done in Visual Studio through SQL Server Object Explorer, Microsoft SQL Management Studio or even in the "ApplicationDbContextModelSnapshot" class in the Migrations folder of the Persistence project.
 
 ### The website
