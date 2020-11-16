@@ -16,7 +16,7 @@ We now need to get the database running (Microsoft local SQL server)
 
 ![](/images/pmc_persistence.png)
 
-  - Run "Initial-Migration Initialize" - this will create the initial migration to the database with a seed of 100 serial numbers.
+  - Run "Add-Migration Initialize" - this will create the initial migration to the database with a seed of 100 serial numbers.
   - When finished applying Initial-Migration run "Update-database".
 
 A new local database amed AcmeCorporationDB should now be made and ready for use.
