@@ -23,7 +23,11 @@ A new local database amed AcmeCorporationDB should now be made and ready for use
 
 The project should be ready to run by now.
 
-#### The website
+### Additional information
+As the database is seeded with randomly generated serial numbers you will need to manually find one in the database.
+This can easily be done in Visual Studio through SQL Server Object Explorer, Microsoft SQL Management Studio or even in the "ApplicationDbContextModelSnapshot" class in the Migrations folder of the Persistence project.
+
+### The website
 
 There are 3 pages to the web project:
 - A landing page
@@ -35,6 +39,6 @@ Here is a picture example from page 2:
 
 ![](/images/acme_submissions.png)
 
-### Additional information
-As the database is seeded with randomly generated serial numbers you will need to manually find one in the database.
-This can easily be done in Visual Studio through SQL Server Object Explorer, Microsoft SQL Management Studio or even in the "ApplicationDbContextModelSnapshot" class in the Migrations folder of the Persistence project.
+### Errors
+If you are launching the project without first creating the database, exceptions will occur when trying to access the "Create Submission" and "Show Submissions" pages. 
+
