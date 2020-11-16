@@ -70,7 +70,7 @@ There are 3 pages to the web project:
 On the show submissions page there is implemented pagination, limiting the shown amount of submissions to 10 per page.
 Here is a picture example from page 2:
 
-![](/images/acme_submissions.png)
+
 
 ### Errors/Exceptions
 If you are launching the project without first creating the database, exceptions will occur when trying to access the "Create Submission" and "Show Submissions" pages. 
