@@ -13,6 +13,7 @@ It is fairly easy getting the project up and running:
 We now need to get the database running (Microsoft local SQL server)
 
 - In Package Manager Console change default project to Persistence:
+
 ![](/images/pmc_persistence.png)
 
   - Run "Initial-Migration Initialize" - this will create the initial migration to the database with a seed of 100 serial numbers.
