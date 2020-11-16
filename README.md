@@ -2,8 +2,8 @@
 
 ### Getting started with the project
 
-The following elements needs to present:
-- Visual Studio
+To be able to use and run the project, the following is needed:
+- Visual Studio (.NET Core)
 - Microsoft SQL server
 
 It is fairly easy getting the project up and running:
