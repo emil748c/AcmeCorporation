@@ -39,6 +39,6 @@ Here is a picture example from page 2:
 
 ![](/images/acme_submissions.png)
 
-### Errors
+### Errors/Exceptions
 If you are launching the project without first creating the database, exceptions will occur when trying to access the "Create Submission" and "Show Submissions" pages. 
 
